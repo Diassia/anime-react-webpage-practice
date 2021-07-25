@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import 'bootswatch/dist/quartz/bootstrap.min.css';
+import 'bootswatch/dist/vapor/bootstrap.min.css';
 import './App.css';
 import AddNewBtn from './AddNewBtn';
 import Completed from './Completed';
@@ -30,7 +30,10 @@ function App() {
       <Header />
         <Title />
         <div classNane="container">
-          <ReactiveImage />
+          { data.visualNovels.length > 0 ? 
+          <ReactiveImage vnData={data.visualNovels[Math.floor(Math.random() * data.visualNovels.length)]}/>
+          : <></>
+          }
         </div>
       <br>
       </br>

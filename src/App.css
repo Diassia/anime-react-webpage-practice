@@ -1,4 +1,8 @@
 /* if used - this will override bootstrap theme */
+html {
+  padding: 50px;
+}
+
 .Title {
   position: relative;
   align-items: center;
@@ -10,3 +14,7 @@
 .card {
   width: 20rem;
 }
+
+/* .reactive-image {
+
+} */
